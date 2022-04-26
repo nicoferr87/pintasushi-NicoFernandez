@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap" 
+    rel="stylesheet">
+
+    <title>PINTA SUSHI</title>
+</head>
+<body>
+  
+    <header class="header">
+       
+        <!--Logo-->
+        <img class="header__icono" src="imagenes/LOGO.jpg" alt="LOGO" width="75" height="75">
+
+         <!--4 paginas Nosotros Menu Galeria Contacto-->
+        <nav class="navegacion">
+            <ul class="navegacion__lista">
+                <li class="navegacion__item"> <a class="navegacion__enlace" href="index.html">Inicio </a> </li>
+                <li class="navegacion__item"> <a class="navegacion__enlace" href="pages/nosotros.html">Nosotros </a> </li>
+                <li class="navegacion__item"> <a class="navegacion__enlace" href="pages/menu.html">Menu </a> </li>
+                <li class="navegacion__item"> <a class="navegacion__enlace" href="pages/galeria.html">Galeria </a> </li>
+                <li class="navegacion__item"> <a class="navegacion__enlace" href="pages/contacto.html">Contacto </a> </li>
+            </ul> 
+
+        </nav>
+    </header>  
+     
+    <main>
+        <!--SECCION 1 VIDEO E IMAGEN PEQUEÑA-->
+        <seccion class="seccionUno">
+
+            <div class="seccionUno__video">
+                <!-- VIDEO -->
+                <video class="seccionUno__video" autoplay loop muted src="videos/pinta-video-inicio.mp4" width="500" height="500" > </video>
+
+            </div>
+
+        </seccion>
+
+        <!--SECCION 2 contenido PARRAFO E IMAGEN GRANDE-->
+
+        <section class="seccionDosgridpadre">
+        
+            <div><h1 class="seccionDos__titulo" class="gridhijo grid__item--1" all="item1">Bienvenido a PINTA SUSHI</h1></div>
+            <div><p class="seccionDos__parrafo" class="gridhijo grid__item--2" all="item2"> El sushi es una comida tradicional de Japón que se elabora a base de arroz. Se trata de un plato servido en porciones de pequeño tamaño que suele comerse con palillos de madera. Lo habitual es que el sushi, además de arroz, incluya mariscos o pescado. 
+           Presentamos diversas tablas, sushi pizzas, woks y además un barco de 100 piezas que te hará volar la cabeza.
+           Contamos con una receta original, desarrollando sushi moderno, llenos de sabor, usando los mejores ingredientes frescos y naturales.
+            </p></div>
+            <div class="gridhijo grid__item--3"><img class="seccionDos__imagenInicio" src="imagenes/img-inicio.jpg" all="item3"></div>
+            
+        </section>
+        
+        <!--SECCION 3 contenido-->
+        <section class="seccionTres">
+            
+             <!--Imagen barco,Sushipizza,Rolls,Horario,Delivery,Carta-->
+
+            <a class="tarjeta__titulo" target="_blank" href="pages/galeria.html#barco">  
+            <div class="gridsec3" class="gridsec3_hijo1" class="tarjeta">
+                <img class="tarjeta__imagen" src="imagenes/barco.jpg" alt="barco" width="80" height="80"> 
+                <P>BARCO</P>
+            </div>
+            </a>
+
+            <a class="tarjeta__titulo" target="_blank" href="pages/galeria.html#sushipizza"> 
+            <div class="gridsec3" class="gridsec3_hijo2" class="tarjeta">
+                <img class="tarjeta__imagen" src="imagenes/sushipizza.jpg" alt="sushipizza" width="80" height="80">  
+                <p>SUSHI
+                   PIZZA
+                </p>
+            </div>
+            </a> 
+
+            <a class="tarjeta__titulo" target="_blank" href="pages/galeria.html#rolls">
+            <div class="gridsec3" class="gridsec3_hijo3" class="tarjeta">
+                <img class="tarjeta__imagen" src="imagenes/rolls.jpg" alt="rolls" width="80" height="80"> 
+                <p>ROLLS</p>  
+            </div>
+            </a>
+
+            <a class="tarjeta__titulo" target="_blank" href="imagenes/hor.png"> 
+            <div class="gridsec3" class="gridsec3_hijo4" class="tarjeta">
+                <img class="tarjeta__imagen" src="imagenes/horarios.jpg" alt="horarios" width="80" height="80"> 
+                <p>HORARIOS</p> 
+            </div>
+            </a>
+
+            <a class="tarjeta__titulo" target="_blank" href="imagenes/del.png">
+            <div class="gridsec3" class="gridsec3_hijo5" class="tarjeta">
+                <img class="tarjeta__imagen" src="imagenes/delivery.jpg" alt="delivery" width="80" height="80">
+                <p>DELIVERY</p> 
+            </div>
+            </a>
+
+            <a class="tarjeta__titulo" target="_blank" href="pages/menu.html">
+            <div class="gridsec3" class="gridsec3_hijo6"  class="tarjeta">
+                <img class="tarjeta__imagen" src="imagenes/carta.jpg" alt="carta" width="80" height="80"> 
+                <p>CARTA</p>
+            </div>
+            </a> 
+
+
+        </section>
+    </main> 
+        
+    <footer class="footer">
+
+        <div>
+        <a class="navegacion__enlace" target="_blank" href="https://www.instagram.com/pintasushi/?hl=es-la">Instagram</a>
+        <a class="navegacion__enlace" target="_blank" href="https://www.facebook.com/PintaSushi">Facebook</a>
+        </div>
+
+        <span> Derechos Reservados - Pinta Sushi 2022</span>
+        <!-- IMAGEN -->
+        <div><img src="imagenes/LOGO.jpg" alt="LOGO" width="75" height="75"></div>
+
+        <!--FALTA PONER WHATSAPP Y UBICACION-->
+        
+    </footer>
+
+</body>
+</html>
