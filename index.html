@@ -4,35 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/estilos.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap" 
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
 
     <title>PINTA SUSHI</title>
 </head>
 <body>
+   
   
-    <header class="header">
-       
-        <!--Logo-->
-        <img class="header__icono" src="imagenes/LOGO.jpg" alt="LOGO" width="75" height="75">
+  <header>
+    <nav  class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
 
-         <!--4 paginas Nosotros Menu Galeria Contacto-->
-        <nav class="navegacion">
-            <ul class="navegacion__lista">
-                <li class="navegacion__item"> <a class="navegacion__enlace" href="index.html">Inicio </a> </li>
-                <li class="navegacion__item"> <a class="navegacion__enlace" href="pages/nosotros.html">Nosotros </a> </li>
-                <li class="navegacion__item"> <a class="navegacion__enlace" href="pages/menu.html">Menu </a> </li>
-                <li class="navegacion__item"> <a class="navegacion__enlace" href="pages/galeria.html">Galeria </a> </li>
-                <li class="navegacion__item"> <a class="navegacion__enlace" href="pages/contacto.html">Contacto </a> </li>
-            </ul> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="../imagenes/LOGO.jpg" alt="LOGO" width="75" height="75"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        
+          <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link active" href="pages/nosotros.html">Nosotros</a>
+              <a class="nav-link active" href="pages/menu.html">Menu</a>
+              <a class="nav-link active" href="pages/galeria.html">Galeria</a>
+              <a class="nav-link active" href="pages/contacto.html">Contacto</a>
+            </div>
+          </div>
+        
+        </div>
+      </nav>
 
-        </nav>
-    </header>  
+</header>
      
-    <main>
+    <main class="row">
         <!--SECCION 1 VIDEO E IMAGEN PEQUEÑA-->
         <seccion class="seccionUno">
 
@@ -58,71 +75,139 @@
         </section>
         
         <!--SECCION 3 contenido-->
-        <section class="seccionTres">
+        <section class="bg-dark">
             
              <!--Imagen barco,Sushipizza,Rolls,Horario,Delivery,Carta-->
-    
-            <a class="efecto" class="tarjeta__titulo" target="_blank" href="pages/galeria.html#barco">  
-            <div class="gridsec3" class="gridsec3_hijo1" class="tarjeta">
-                <img class="tarjeta__imagen" src="imagenes/barco.jpg" alt="barco" width="80" height="80"> 
-                <P>BARCO</P>
-            </div>
-            </a>
 
-            <a class="efecto" class="tarjeta__titulo" target="_blank" href="pages/galeria.html#sushipizza"> 
-            <div class="gridsec3" class="gridsec3_hijo2" class="tarjeta">
-                <img class="tarjeta__imagen" src="imagenes/sushipizza.jpg" alt="sushipizza" width="80" height="80">  
-                <p>SUSHI
-                   PIZZA
-                </p>
-            </div>
-            </a> 
+            <!--TARJETA CREADA CON BOOTSTRAP-->
+            <main class="row mt-5  p-4">
+                <!-- tarjetas -->
+                <section class="col col-lg-12">
+                
+                  <!-- grilla de tarjetas -->
+                  <div class="row g-5">
+                    <div class="col-12 col-md-2">
+                      <article class="efecto " class="tarjeta__titulo" class="card effect">
+                        <img 
+                          src="imagenes/barco.jpg"
+                          alt="barco"
+                          class="tarjeta__imagen"
+                        />
+                        <div class="card-body d-grid gap-2 d-md-flex justify-content-md-center">
+                          <a class="btn btn-dark" href="pages/galeria.html#barco">BARCO</a>
+                        </div>
+                      </article>
+                    </div>
 
-            <a class="efecto" class="tarjeta__titulo" target="_blank" href="pages/galeria.html#rolls">
-            <div class="gridsec3" class="gridsec3_hijo3" class="tarjeta">
-                <img class="tarjeta__imagen" src="imagenes/rolls.jpg" alt="rolls" width="80" height="80"> 
-                <p>ROLLS</p>  
-            </div>
-            </a>
+                    <div class="col-12 col-md-2">
+                    <article class="efecto " class="tarjeta__titulo" class="card effect">
+                        <img 
+                          src="imagenes/sushipizza.jpg"
+                          alt="sushipizza"
+                          class="tarjeta__imagen"
+                        />
+                        <div class="card-body d-grid gap-2 d-md-flex justify-content-md-center">
+                          <a class="btn btn-dark" href="pages/galeria.html#sushipizza">SUSHIPIZZA</a>
+                        </div>
+                      </article>
+                    </div>
 
-            <a class="efecto" class="tarjeta__titulo" target="_blank" href="imagenes/hor.png"> 
-            <div class="gridsec3" class="gridsec3_hijo4" class="tarjeta">
-                <img class="tarjeta__imagen" src="imagenes/horarios.jpg" alt="horarios" width="80" height="80"> 
-                <p>HORARIOS</p> 
-            </div>
-            </a>
+                    <div class="col-12 col-md-2">
+                        <article class="efecto " class="tarjeta__titulo" class="card effect">
+                            <img 
+                              src="imagenes/rolls.jpg"
+                              alt="rolls"
+                              class="tarjeta__imagen"
+                            />
+                            <div class="card-body d-grid gap-2 d-md-flex justify-content-md-center">
+                              <a class="btn btn-dark" href="pages/galeria.html#rolls">ROLLS</a>
+                            </div>
+                          </article>
+                        </div>
+                    <div class="col-12 col-md-2">
+                        <article class="efecto" class="tarjeta__titulo" class="card effect">
+                          <img
+                            src="imagenes/horarios.jpg"
+                            alt="horarios"
+                            class="tarjeta__imagen"
+                          />
+                          <div class="card-body d-grid gap-2 d-md-flex justify-content-md-center">
+                            <a class="btn btn-dark" href="imagenes/hor.png">HORARIOS</a>
+                          </div>
+                        </article>
+                      </div>
 
-            <a class="efecto" class="tarjeta__titulo" target="_blank" href="imagenes/del.png">
-            <div class="gridsec3" class="gridsec3_hijo5" class="tarjeta">
-                <img class="tarjeta__imagen" src="imagenes/delivery.jpg" alt="delivery" width="80" height="80">
-                <p>DELIVERY</p> 
-            </div>
-            </a>
+                      <div class="col-12 col-md-2">
+                        <article class="efecto" class="tarjeta__titulo" class="card effect">
+                          <img
+                            src="imagenes/delivery.jpg"
+                            alt="delivery"
+                            class="tarjeta__imagen"
+                          />
+                          <div class="card-body d-grid gap-2 d-md-flex justify-content-md-center">
+                            <a class="btn btn-dark" href="imagenes/del.png">DELIVERY</a>
+                          </div>
+                        </article>
+                      </div>
 
-            <a class="efecto" class="tarjeta__titulo" target="_blank" href="pages/menu.html">
-            <div class="gridsec3" class="gridsec3_hijo6"  class="tarjeta">
-                <img class="tarjeta__imagen" src="imagenes/carta.jpg" alt="carta" width="80" height="80"> 
-                <p>CARTA</p>
-            </div>
-            </a> 
+                      <div class="col-12 col-md-2">
+                        <article class="efecto" class="tarjeta__titulo" class="card effect">
+                          <img
+                            src="imagenes/carta.jpg"
+                            alt="carta"
+                            class="tarjeta__imagen"
+                          />
+                          <div class="card-body d-grid gap-2 d-md-flex justify-content-md-center">
+                            <a class="btn btn-dark" href="pages/menu.html">CARTA</a>
+                          </div>
+                        </article>
+                      </div>
+                      
+                  </div>
+                </section>
+        
+                
+                
+              </main>
 
+        
 
         </section>
     </main> 
-        
-    <footer class="footer">
-
-        <div>
-        <a class="navegacion__enlace" target="_blank" href="https://www.instagram.com/pintasushi/?hl=es-la">Instagram</a>
-        <a class="navegacion__enlace" target="_blank" href="https://www.facebook.com/PintaSushi">Facebook</a>
-        </div>
-
-        <span> Derechos Reservados - Pinta Sushi 2022</span>
-        <!-- IMAGEN -->
-        <div><img src="imagenes/LOGO.jpg" alt="LOGO" width="75" height="75"></div>
-
-        <!--FALTA PONER WHATSAPP Y UBICACION-->
-        
+     
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/PintaSushi/" role="button"
+            ><i class="bi bi-facebook"></i
+          ></a>
+    
+          <!-- whatsapp -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+          
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/pintasushi/?hl=es" role="button"
+            ><i class="bi bi-instagram"></i
+          ></a>
+    
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" hhref="index.html">PintaSushi.com</a>
+        <a href="index.html">
+          <img class="text-center p-3" src="../imagenes/LOGO.jpg" alt="LOGO" width="75" height="75"></a>
+      </div>
+      <!-- Copyright -->
     </footer>
 
 </body>
