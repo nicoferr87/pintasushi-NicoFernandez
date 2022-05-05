@@ -561,7 +561,12 @@ ul {list-style-position: inside;
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     }
-    
+
+
+                /*GALERIA -- ROLLS*/
+                /*GALERIA -- SUSHIPIZZA*/
+                /*GALERIA -- BARCO*/
+
 
                 /* MEDIA QUERIES */
 
@@ -608,6 +613,7 @@ ul {list-style-position: inside;
     font-size: 15px;
     text-align: center;
 }
+
 
             /* ---- GALERIA ---- */
 
@@ -848,6 +854,7 @@ ul {list-style-position: inside;
     text-align: center;
     
 }
+
                 /* ---- GALERIA ---- */
 
         /*SECCION ROLLS*/
