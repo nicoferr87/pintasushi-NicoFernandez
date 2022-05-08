@@ -472,7 +472,7 @@ ul {list-style-position: inside;
     padding-right: 1rem;
     display: grid;
     
-    grid-template-columns: repeat(2, 50%); 
+    grid-template-columns: repeat(2, 48%); 
     grid-template-rows: repeat(2, 350px); 
     grid-template-areas: 
 
@@ -564,9 +564,30 @@ ul {list-style-position: inside;
 
 
                 /*GALERIA -- ROLLS*/
+
                 /*GALERIA -- SUSHIPIZZA*/
+.imagen-filtro {
+  transition: all 0.4s ease;
+}
+.imagen-filtro:hover {
+  -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+
                 /*GALERIA -- BARCO*/
 
+
+.img {
+    transition: transform .5s, filter .5s;
+  z-index:1
+}
+.img:hover  {
+  transform: scale(1.2);
+  filter: grayscale(100%);
+  cursor: pointer;
+  overflow: hidden;
+  
+}
 
                 /* MEDIA QUERIES */
 
