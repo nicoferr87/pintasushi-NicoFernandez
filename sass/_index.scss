@@ -1,0 +1,11 @@
+.seccionUno {
+    background-color: #EDF2F4;
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    .seccionUno__video{
+        width: 100%;
+        height: 75vh;
+        object-fit: cover;
+    }
+}

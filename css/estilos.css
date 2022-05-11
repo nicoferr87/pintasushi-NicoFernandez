@@ -544,7 +544,9 @@ ul {list-style-position: inside;
     object-fit: cover;
 }
 
+
                 /*----ANIMACIONES, TRANSFORMACIONES, TRANSICIONES----*/
+
 
                 /*INDEX -- PAGINA PRINCIPAL*/
 
@@ -562,10 +564,9 @@ ul {list-style-position: inside;
     -webkit-transform: rotate(360deg);
     }
 
+                
 
-                /*GALERIA -- ROLLS*/
-
-                /*GALERIA -- SUSHIPIZZA*/
+                /*GALERIA -- ROLLS SUSHIPIZZA BARCO*/
 .imagen-filtro {
   transition: all 0.4s ease;
 }
@@ -574,20 +575,6 @@ ul {list-style-position: inside;
     filter: grayscale(100%);
 }
 
-                /*GALERIA -- BARCO*/
-
-
-.img {
-    transition: transform .5s, filter .5s;
-  z-index:1
-}
-.img:hover  {
-  transform: scale(1.2);
-  filter: grayscale(100%);
-  cursor: pointer;
-  overflow: hidden;
-  
-}
 
                 /* MEDIA QUERIES */
 
