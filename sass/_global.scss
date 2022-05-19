@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*FUENTE QUE SE USA EN TODA LA WEB*/
+body{
+    
+    font-family: 'Roboto Mono', monospace;
+}
+/*LE SACO LAS VIÑETAS A LA BARRA DE NAVEGACION INICIO NOSOTROS MENU GALERIA CONTACTO 
+Y ADEMAS AGREGO LAS VIÑETAS QUE USO EN LA SECCION MENU, LA BARRA DE NAVEGACION QUEDA 
+SIN SUBRAYAR SELECTOR DE ETIQUETA*/
+
+a {text-decoration: none;
+}
+
+header nav ul {list-style-type: none;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+@mixin cardcontainer($textalign) {
+    border-radius: 50px;
+    width: 150px;
+    height: 170px;
+    background-color: #EDF2F4;
+    text-align: $textalign;
+}

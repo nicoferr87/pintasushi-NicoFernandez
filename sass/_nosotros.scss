@@ -1,0 +1,66 @@
+/* SECCION 1 -- TITULO, IMAGEN Y TEXTO */
+
+.sec1titulo{
+    color: black;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    margin: 64px;
+    background-color: #EDF2F4
+}
+
+.secUno{
+    background-color: #EDF2F4;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+
+    &__img{
+    padding: 100px;
+    width: 50%;
+}
+    &__imgimg{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+    &__preg{
+    padding: 100px;
+    text-align: center;
+    font-size: 25px;
+    width: 50%;
+    line-height: 1.5;
+}
+    &__title{
+    background-color: black;
+    color:#EDF2F4;
+    text-align: center; 
+}
+}
+
+/* SECCION 2 --  UBICACION LOCAL1, LOCAL2 */
+
+.secDos{
+    background-color: #EDF2F4;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+    &__pinta1{
+    width: 50%;
+    padding: 100px;
+}
+    &__pinta2{
+    width: 50%;
+    padding: 100px;
+}
+}
+
+.secUno__iframe{
+    width: 100%;
+    height: 93%;
+}
+

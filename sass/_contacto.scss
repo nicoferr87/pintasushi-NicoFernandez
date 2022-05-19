@@ -1,0 +1,33 @@
+.ladoleftright{
+    display: flex;
+    background-color: #EDF2F4;
+    width: 100%;
+    height: 85vh;
+    align-items: center;
+    
+}
+
+.ladoleft{
+    width: 50%;
+    padding: 100px;
+}
+.ladoleft__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ladoright{
+    width: 50%;
+    padding: 100px;
+}
+
+.secc_imagen{
+    width: 100%;
+    height: 65vh;
+}
+
+.imagen{
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+}
